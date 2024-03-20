@@ -1,11 +1,28 @@
 
 # <center> CI/CD <center/>
 
+
+- [ CI/CD ](#-cicd-)
+  - [What is CI?](#what-is-ci)
+  - [Where is CI?](#where-is-ci)
+  - [Why do we use CI?](#why-do-we-use-ci)
+  - [How do we use CI?](#how-do-we-use-ci)
+  - [When do we use CI?](#when-do-we-use-ci)
+- [  Jenkins  ](#--jenkins--)
+  - [Link the first job to second:](#link-the-first-job-to-second)
+- [Build with github:](#build-with-github)
+  - [Github](#github)
+  - [Jenkins](#jenkins)
+- [References](#references)
+
+
+
 ![alt text](diagram.png)
 ## What is CI?
 
 
-The DevOps practice of automating build and running tests after a group of devs have frequently merged there code into a central place (repository) is called Continuous Integration or CI. The goal of CI is to reduce the time taken to find and fix bugs, release software and improve general software quality
+The DevOps practice of automating build and running tests after a group of devs have frequently merged there code into a central place (repository) is called Continuous Integration or CI. The goal of CI is to reduce the time taken to find and fix bugs, release software and improve general software quality.
+
 
 ## Where is CI?
 
