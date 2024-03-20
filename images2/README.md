@@ -204,7 +204,9 @@ I went to my vsc and made some changes to a file to test it and as you can see b
 ![alt text](<Screenshot 2024-03-20 at 15.37.18.png>)
 
 
-to see the build in motion I will push after writing this line.
+to see the build in motion I will push after writing this line, so we can see it pending:
+
+
 # References
 
 https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450
