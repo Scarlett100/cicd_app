@@ -46,8 +46,8 @@ An example of CI within agile development:
 *   Build: techniques needed to create files & merge development branches into main.
 *   Test: Test end-to-end describes the testing to ensure we have reached our solution.
 *   Stage describes the steps required to host and validate solutions in a staging environment before production
+![alt text](<Screenshot 2024-03-20 at 10.18.46.png>)
 
-![alt text](<../images/Screenshot 2024-03-20 at 10.18.46.png>)
 
 
 ## When do we use CI?
@@ -68,7 +68,7 @@ To create a jenkins build we must select **new item**, **name** our project and 
 
 ![alt text](<Screenshot 2024-03-20 at 11.52.37.png>)
 
-![alt text](<../images/Screenshot 2024-03-20 at 11.19.40.png>)
+![alt text](<Screenshot 2024-03-20 at 11.19.40.png>)
 
 <br>
 
@@ -95,8 +95,8 @@ Once job is saved click **build now** :
 
 As you can see below we have a **succesful build**:
 <br>
-![alt text](<../images/Screenshot 2024-03-20 at 11.31.41.png>)
 
+![alt text](<Screenshot 2024-03-20 at 11.31.41.png>)
 
 ## Link the first job to second:
 
@@ -176,10 +176,10 @@ Next we needed to congigure a web hook to get the automatic builds.
 
 Within our Github repo navigate to **settings** then to **webhooks** on the left hand pane.
 
-Once there enter the jenkins url and give the hook a name:
+Once there enter the jenkins url and **"github-webhook/"**:
 <br>
 ``` 
-http://35.176.97.54:8080/<hook_name>
+http://35.176.97.54:8080/github-webhook/
 ```
 ![alt text](<Screenshot 2024-03-20 at 15.40.01.png>)
 
@@ -187,7 +187,7 @@ A **secret** is optional, so I left that and left **content type* blank.
 
 I found my webhook did ot work without a name, so I added a name, after looking up my issue.
 As you can see my webhook has been created and is pinging.
-
+![alt text](<Screenshot 2024-03-20 at 15.09.10.png>)
 ![alt text](<Screenshot 2024-03-20 at 15.39.32.png>)
 
 Once webhook is working, navigate to jenkins and make this change.
@@ -204,16 +204,12 @@ I went to my vsc and made some changes to a file to test it and as you can see b
 ![alt text](<Screenshot 2024-03-20 at 15.37.18.png>)
 
 
-to see the build in motion I will push after writing this line, so we can see it pending:
-
-
 # References
 
-https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450
-https://aws.amazon.com/devops/continuous-integration/\https://scaledagileframework.com/continuous-integration/
-https://scaledagileframework.com/continuous-integration/#:~:text=Continuous%20integration%20is%20a%20critical,potentially%20deployable%2C%20even%20during%20development.
-* https://docs.github.com/en/webhooks/using-webhooks/creating-webhooks
+ *   https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450
+ *   https://aws.amazon.com/devops/continuous-integration/\https://scaledagileframework.com/continuous-integration/
+ *   https://scaledagileframework.com/continuous-integration/#:~:text=Continuous%20integration%20is%20a%20critical,potentially%20deployable%2C%20even%20during%20development.
+*    https://docs.github.com/en/webhooks/using-webhooks/creating-webhooks
 * https://www.youtube.com/watch?v=Uu8_cb0WRAw
 
 
-git push -u origin master
