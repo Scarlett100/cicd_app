@@ -169,13 +169,36 @@ our user data:
 
 # Webhook
 
-quick change: to test webhook
+Webhooks let you subscribe to events happening in a software system and automatically receive a delivery of data to your server whenever those events occur. Webhooks are used to receive data as it happens, in this case my intention was to get my webhook to connect with jenkins and create automatic builds.
 
+
+Next we needed to congigure a web hook to get the automatic builds.
+
+Within our Github repo navigate to **settings** then to **webhooks** on the left hand pane.
+
+Once there enter the jenkins url and give the hook a name:
+<br>
+``` 
+http://35.176.97.54:8080/<hook_name>
+```
+![alt text](<Screenshot 2024-03-20 at 15.40.01.png>)
+
+A **secret** is optional, so I left that and left **content type* blank.
+
+I found my webhook did ot work without a name, so I added a name, after looking up my issue.
+As you can see my webhook has been created and is pinging.
+
+
+![alt text](<Screenshot 2024-03-20 at 15.39.32.png>)
+
+hello
 # References
 
 https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450
 https://aws.amazon.com/devops/continuous-integration/\https://scaledagileframework.com/continuous-integration/
 https://scaledagileframework.com/continuous-integration/#:~:text=Continuous%20integration%20is%20a%20critical,potentially%20deployable%2C%20even%20during%20development.
+* https://docs.github.com/en/webhooks/using-webhooks/creating-webhooks
+* https://www.youtube.com/watch?v=Uu8_cb0WRAw
 
 
 git push -u origin master
