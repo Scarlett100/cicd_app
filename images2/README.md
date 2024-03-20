@@ -13,7 +13,7 @@
 - [Build with github:](#build-with-github)
   - [Github](#github)
   - [Jenkins](#jenkins)
-- [  Webhook ](#--webhook-)
+- [  Webhooks ](#--webhooks-)
 - [References](#references)
 
 
@@ -166,7 +166,7 @@ npm test
 our user data:
 ![alt text](<Screenshot 2024-03-20 at 14.53.54.png>)
 
-# <center>  Webhook <center/>
+# <center>  Webhooks <center/>
 
 Webhooks let you subscribe to events happening in a software system and automatically receive a delivery of data to your server whenever those events occur. Webhooks are used to receive data as it happens, in this case my intention was to get my webhook to connect with jenkins and create automatic builds.
 
