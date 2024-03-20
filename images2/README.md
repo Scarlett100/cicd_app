@@ -13,7 +13,7 @@
 - [Build with github:](#build-with-github)
   - [Github](#github)
   - [Jenkins](#jenkins)
-- [Webhook](#webhook)
+- [  Webhook ](#--webhook-)
 - [References](#references)
 
 
@@ -29,7 +29,7 @@ The DevOps practice of automating build and running tests after a group of devs 
 
 With continuous integration, it is always possibly deployment ready, even during development as  the system always runs.
 
-In regards to how w e can 
+In regards to how we can use CI in practice, please see below in **How do we use CI**
 
 
 ## Why do we use CI?
@@ -53,7 +53,6 @@ An example of CI within agile development:
 ## When do we use CI?
 
 Ideally before you build it is best to start your pipeline build plan.
-
 
 
 #  <center>  Jenkins  <center/>
@@ -167,7 +166,7 @@ npm test
 our user data:
 ![alt text](<Screenshot 2024-03-20 at 14.53.54.png>)
 
-# Webhook
+# <center>  Webhook <center/>
 
 Webhooks let you subscribe to events happening in a software system and automatically receive a delivery of data to your server whenever those events occur. Webhooks are used to receive data as it happens, in this case my intention was to get my webhook to connect with jenkins and create automatic builds.
 
@@ -203,6 +202,10 @@ I went to my vsc and made some changes to a file to test it and as you can see b
 
 ![alt text](<Screenshot 2024-03-20 at 15.37.18.png>)
 
+
+Lastly, I did a few other pushes and for the penultimate one, you can see what is happeneing in real time!
+
+![alt text](<Screenshot 2024-03-20 at 16.33.54.png>)
 
 # References
 
