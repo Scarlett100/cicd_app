@@ -65,7 +65,9 @@ hostname
 uname -a
 ``` 
 <br>
-Once job is saved click **build now**:
+
+Once job is saved click **build now** :
+
 <br>
 
 ![alt text](<Screenshot 2024-03-20 at 11.38.10.png>)
