@@ -188,10 +188,23 @@ A **secret** is optional, so I left that and left **content type* blank.
 I found my webhook did ot work without a name, so I added a name, after looking up my issue.
 As you can see my webhook has been created and is pinging.
 
-
 ![alt text](<Screenshot 2024-03-20 at 15.39.32.png>)
 
-hello
+Once webhook is working, navigate to jenkins and make this change.
+
+![alt text](<Screenshot 2024-03-20 at 15.36.28.png>)
+
+You will see I only had 4 builds:
+
+
+![alt text](<Screenshot 2024-03-20 at 15.08.18.png>)
+
+I went to my vsc and made some changes to a file to test it and as you can see below, a 5th build was triggered.
+
+![alt text](<Screenshot 2024-03-20 at 15.37.18.png>)
+
+
+to see the build in motion I will push after writing this line.
 # References
 
 https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450
