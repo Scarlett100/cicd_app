@@ -131,7 +131,7 @@ First you must make sure the repo is linked to a specific key. so create a key i
 ## Jenkins
 Next we go over to Jenkins and select **new build**
 
-* First:we used the **HTTPS** link to repo and inputted that. 
+* First: We used the **HTTPS** link to repo and inputted that. 
 
 ![alt text](<Screenshot 2024-03-20 at 13.33.09.png>)
 
