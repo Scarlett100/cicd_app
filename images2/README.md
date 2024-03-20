@@ -28,6 +28,8 @@ The DevOps practice of automating build and running tests after a group of devs 
 
 With continuous integration, it is always possibly deployment ready, even during development as  the system always runs.
 
+In regards to how w e can 
+
 
 ## Why do we use CI?
 
@@ -100,9 +102,9 @@ As you can see below we have a **succesful build**:
 
 Now that both jobs have been succesful:
 
-In the homepages on our first job hover in homepages and choose configure
+In the homepages on our first job hover in homepages and choose **configure**.
 
-![alt text](<../Screenshot 2024-03-20 at 12.02.53.png>)
+![alt text](<Screenshot 2024-03-20 at 12.02.53.png>)
 
 
 Now within **Post-build Actions** choose to **trigger only if build is stable**.
