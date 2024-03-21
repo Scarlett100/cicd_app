@@ -220,7 +220,7 @@ rm -rf .git
 ```
 I manually copied and pasted all files to my other repo.
 
-Then push back up too our repos. Once we did this, we no longer got Jenkins build errors on the 2nd builds........... a
+Then push back up too our repos. Once we did this, we no longer got Jenkins build errors on the 2nd builds........... a..
 
 # References
 
