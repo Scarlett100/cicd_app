@@ -14,6 +14,7 @@
   - [Github](#github)
   - [Jenkins](#jenkins)
 - [  Webhooks ](#--webhooks-)
+- [Blockers](#blockers)
 - [References](#references)
 
 
@@ -206,6 +207,20 @@ I went to my vsc and made some changes to a file to test it and as you can see b
 Lastly, I did a few other pushes and for the penultimate one, you can see what is happeneing in real time!
 
 ![alt text](<Screenshot 2024-03-20 at 16.33.54.png>)
+
+
+# Blockers
+
+It seemed we had a different version of Node to Sharukh, as we were all getting errors, so we had to git clone his repo, delete his .git folder with
+
+```
+an
+ls -a
+rm -rf .git
+```
+I manually copied and pasted all files to my other repo.
+
+Then push back up too our repos. Once we did this, we no longer got Jenkins build errors on the 2nd builds.
 
 # References
 
