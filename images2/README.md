@@ -15,6 +15,9 @@
   - [Jenkins](#jenkins)
 - [  Webhooks ](#--webhooks-)
 - [Blockers](#blockers)
+- [Firstly we wanted to test](#firstly-we-wanted-to-test)
+  - [step 1 - Change the payload URL](#step-1---change-the-payload-url)
+  - [Step 2: create a dev branch - change the branch in Jenkins job](#step-2-create-a-dev-branch---change-the-branch-in-jenkins-job)
 - [References](#references)
 
 
@@ -222,7 +225,34 @@ rm -rf .git
 ```
 I manually copied and pasted all files to my other repo.
 
-Then push back up too our repos. Once we did this, we no longer got Jenkins build errors on the 2nd builds.
+Then push back up too our repos. Once we did this, we no longer got Jenkins build errors on the 2nd builds........... a.........trying................................................ a....a....
+
+
+# Firstly we wanted to test 
+
+## step 1 - Change the payload URL
+
+AWS uses dynamic ip's, they change everytime you stop and start an instance so we must update the webhook. Azure uses static, so this step would not be needed with azure.
+To do this we had to update the webhook with a new endpoint. 
+I found that whenI just updated the url it didnt work, so I deleted and remade another webhook, which was successful.
+  
+   - push the code after making any change to ensure CI works as it did yesterday.
+
+## Step 2: create a dev branch - change the branch in Jenkins job
+
+
+Next we had to create our dev branch which I did by running
+
+
+```
+git branch dev
+git checkout dev <--- this will switch you to dev
+```
+mmm
+
+
+- make a change locally then push to ensure the job is just chck
+
 
 create dev branch
 make changes to dev branch
