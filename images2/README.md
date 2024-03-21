@@ -237,7 +237,7 @@ if succesful trigger the Ci-MERGE TO merge into main
 then make 2nd job
 merge job
 
-job is to merge code from dev to main
+job is to merge code from dev to main.
 
 
 
