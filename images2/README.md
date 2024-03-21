@@ -176,7 +176,7 @@ Next we needed to congigure a web hook to get the automatic builds.
 
 Within our Github repo navigate to **settings** then to **webhooks** on the left hand pane.
 
-Once there enter the jenkins url and **"github-webhook/"**:
+Once there enter the jenkins url endpoint and **"github-webhook/"**:
 <br>
 ``` 
 http://35.176.97.54:8080/github-webhook/
@@ -209,6 +209,8 @@ Lastly, I did a few other pushes and for the penultimate one, you can see what i
 ![alt text](<Screenshot 2024-03-20 at 16.33.54.png>)
 
 
+To note on AWS if you switch off vm its connected too and restart vm it will not work, because AWS uses Dynamic IP it changes every time you turn it on. whereas Azure give you a **static** ip, it doesn't change so it would work if switched off.
+
 # Blockers
 
 It seemed we had a different version of Node to Sharukh, as we were all getting errors, so we had to git clone his repo, delete his .git folder with
@@ -221,6 +223,24 @@ rm -rf .git
 I manually copied and pasted all files to my other repo.
 
 Then push back up too our repos. Once we did this, we no longer got Jenkins build errors on the 2nd builds.
+
+create dev branch
+make changes to dev branch
+push to github to trigger the ci job
+if succesful trigger the Ci-MERGE TO merge into main
+
+1.get working again with new url
+2.
+3. create dev
+4. make change on job to listen on dev
+5. make change to code check works on code
+then make 2nd job
+merge job
+
+job is to merge code from dev to main
+
+
+
 
 # References
 
