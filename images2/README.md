@@ -17,6 +17,7 @@
 - [Blockers](#blockers)
 - [Firstly we wanted to test](#firstly-we-wanted-to-test)
   - [step 1 - Change the payload URL](#step-1---change-the-payload-url)
+  - [Step 2: create a dev branch - change the branch in Jenkins job](#step-2-create-a-dev-branch---change-the-branch-in-jenkins-job)
 - [References](#references)
 
 
@@ -235,15 +236,20 @@ I found that whenI just updated the url it didnt work, so I deleted and remade a
   
    - push the code after making any change to ensure CI works as it did yesterday.
 
-To do this we had to update the webhook with a new endpoint. 
-I found that whenI just updated the url it didnt work, so I deleted and remade another webhook, which was successful.
-
-Step 2: create a dev branch - change the branch in
-Jenkins job
+## Step 2: create a dev branch - change the branch in Jenkins job
 
 
-- make a change locally then push to ensure the job is triggered from dev branch push. if successful it should then trigger the CI-Merge job
-Step 3 - create a new job called shahrukh-CI-Merge this branch should merge the code from dev to main branch and it should be triggered automatically by shahrukh-ci job
+Next we had to create our dev branch which I did by running
+
+
+```
+git branch dev
+git checkout dev <--- this will switch you to dev
+```
+
+
+
+- make a change locally then push to ensure the job is 
 
 
 # References
