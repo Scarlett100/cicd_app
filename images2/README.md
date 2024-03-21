@@ -232,12 +232,13 @@ if succesful trigger the Ci-MERGE TO merge into main
 1.get working again with new url
 2.
 3. create dev
-4. make change on job to listen on dev
-5. make change to code check works on code
+4. 
+5. make change on job to listen on dev
+6. make change to code check works on code
 then make 2nd job
 merge job
 
-job is to merge code from dev to main.
+job is to merge code from dev to main...
 
 
 
