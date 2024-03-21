@@ -16,6 +16,7 @@
 - [  Webhooks ](#--webhooks-)
 - [Blockers](#blockers)
 - [Firstly we wanted to test](#firstly-we-wanted-to-test)
+  - [step 1 - Change the payload URL](#step-1---change-the-payload-url)
 - [References](#references)
 
 
@@ -225,6 +226,24 @@ Then push back up too our repos. Once we did this, we no longer got Jenkins buil
 
 
 # Firstly we wanted to test 
+
+## step 1 - Change the payload URL
+
+AWS uses dynamic ip's, they change everytime you stop and start an instance so we must update the webhook. Azure uses static, so this step would not be needed with azure.
+To do this we had to update the webhook with a new endpoint. 
+I found that whenI just updated the url it didnt work, so I deleted and remade another webhook, which was successful.
+  
+   - push the code after making any change to ensure CI works as it did yesterday.
+
+To do this we had to update the webhook with a new endpoint. 
+I found that whenI just updated the url it didnt work, so I deleted and remade another webhook, which was successful.
+
+Step 2: create a dev branch - change the branch in
+Jenkins job
+
+
+- make a change locally then push to ensure the job is triggered from dev branch push. if successful it should then trigger the CI-Merge job
+Step 3 - create a new job called shahrukh-CI-Merge this branch should merge the code from dev to main branch and it should be triggered automatically by shahrukh-ci job
 
 
 # References
